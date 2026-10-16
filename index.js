@@ -87,7 +87,6 @@ app.put("/atracoes/:id", async (req, res) => {
 app.delete("/atracoes/:id", async (req, res) => {
   try {
     const id = Number(req.params.id);
-s
    await prisma.atracao.delete({
   where: { id }
 });
